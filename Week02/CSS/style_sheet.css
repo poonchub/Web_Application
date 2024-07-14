@@ -1,0 +1,30 @@
+a {
+    text-decoration: none;
+}
+
+navbar div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link{
+    padding: 4px 9px 4px 9px;
+    border-radius: 15px;
+    margin: 0px 2px 0px 2px;
+    border: 2px solid transparent;
+}
+
+.nav-link-onclick{
+    padding: 4px 9px 4px 9px;
+    border-radius: 15px;
+    margin: 0px 2px 0px 2px;
+    background-color: greenyellow;
+    border: 2px solid greenyellow;
+}
+
+.nav-link:hover{
+    background-color: transparent;
+    transition: all 0.5s ease;
+    border-color: greenyellow;
+}

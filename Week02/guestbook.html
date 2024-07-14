@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Guesbook</title>
+	<meta name="Genarator" content="Notepad">
+	<meta name="Author" content="Poonchub">
+	<meta name="Keywords" content="Web Development">
+	<meta name="Description" content="Web Design Animation">
+	<link rel="stylesheet" href="CSS/style_sheet.css">
+    </head>
+    <body>
+        <center>
+            <hr width="80%" size="3" noshade>
+            <header>
+                <h1>Poonchub Nanawan</h1>
+                <p><b>Suranaree University of technology, THAILAND</b></p>
+            </header>
+            <hr size="3" noshade>
+            <navbar>
+                <div>
+                    <span>::|::</span>
+                    <a class="nav-link" href="home.html">Home</a>
+                    <span>::|::</span>
+                    <a class="nav-link" href="office_hour.html">Office Hour</a>
+                    <span>::|::</span>
+                    <a class="nav-link" href="like_dislike.html">Like/Dislike</a>
+                    <span>::|::</span>
+                    <a class="nav-link" href="images.html">Images</a>
+                    <span>::|::</span>
+                    <a class="nav-link" href="links.html">Links</a>
+                    <span>::|::</span>
+                    <a class="nav-link-onclick" href="guestbook.html">Guestbook</a>
+                    <span>::|::</span>
+                </div>
+            </navbar>
+            <hr size="3" noshade>
+        </center>
+        <section>
+            <p><b>Please sign in ...</b></p>
+	    <table width="60%" align="center" cellpadding="4">
+			<tr bgcolor="greenyellow">
+				<th colspan="2">Welcome</th>
+			</tr>
+			<form method="post" action="thanks.html">
+				<tr>
+					<td>Initial</td>
+					<td>
+						<input type="radio" name="initial" value="Mr." checked>Mr.
+						<input type="radio" name="initial" value="Ms.">Ms.
+					</td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>
+						<input type="text" name="name" size="50" required>
+					</td>
+				</tr>
+				<tr>
+					<td>ID</td>
+					<td>
+						<input type="text" name="id" size="50" required>
+					</td>
+				</tr>
+				<tr>
+					<td>School</td>
+					<td>
+						<select name="school">
+							<option value="Electrical Engineering">Electrical Engineering
+							<option value="Computer Engineering">Computer Engineering
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>
+						<input type="email" name="email" size=50 required>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 align="center">
+						<input type="submit" name="request" value="Submit">
+						<input type="reset" name="clear" value="Reset">
+						
+						<div style="font-size: 11px;">
+							<hr size=10 color="greenyellow">
+							&copy; ENG23 3013 Web Application, Suranaree University of Technology, THAILAND
+							<hr size=10 color="greenyellow">
+						</div>
+
+					</td>
+				</tr>
+			</form>
+	    </table>
+        </section>
+        <hr size="3" noshade>
+        <footer>
+            <a href="#">
+                <p align="center">email: poonchubnanawan310@gmail.com</p>
+            </a>
+        </footer>
+    </body>
+
+</html>
