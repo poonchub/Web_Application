@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .button {
+                font-weight: 700;
+                padding:8px 14px;
+                border-radius: 45px;
+                transition: all 0.5;
+                background-color: aqua;
+            }
+            .button:hover{
+                background-color: rgb(138, 255, 42);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <hr class="line1">
+        <form method="post" action="calculate.php">
+            <table border="1">
+                <tr>
+                    <th colspan="3" bgcolor="yellow" style="height:20px"></th>
+                </tr>
+                <tr>
+                    <td align="center" valign="center">
+                        Number 1<br>
+                        <input type="text" name="number1" required>
+                    </td>
+                    <td>
+                        <input type="radio" name="do" value="+" required>Plus(+)<br>
+                        <input type="radio" name="do" value="-">Minus(-)<br>
+                        <input type="radio" name="do" value="*">Multiply(*)<br>
+                        <input type="radio" name="do" value="/">Divide(/)
+                    </td>
+                    <td align="center" valign="center">
+                        Number 2<br>
+                        <input type="text" name="number2" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input class="button" type="submit" name="calculate" value="Click Hear to See an Answer!">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
