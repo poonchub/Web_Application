@@ -31,6 +31,7 @@
             $number1 = $_POST["number1"];
             $number2 = $_POST["number2"];
             $result = 0;
+            $text = "null";
 
             if ($number1>=$number2){
                 switch ($do) {
@@ -45,19 +46,23 @@
                         break;
                     case "/" :
                         if ($number2==0) {
-                            echo "<h1>Error Divide By Zero!</h1>";
+                            $text = "Error Divide By Zero!";
                             break;
                         }
                         $result = $number1/$number2;
-                        break;
-                    
-                    echo "<h1>The answer of $number1 $do $number2 = $result</h1>";
+                        break;      
+                }
+
+                if ($text=="null"){
+                    echo "<h1>The answer of  $number1 $do $number2 = $result</h1>";
+                }
+                else {
+                    echo "<h1>$text</h1>";
                 }
             }
             else {
-                echo "Invalid Input!";
+                echo "<h1>Invalid Input!</h1>";
             }
-            
         ?>
         <hr class="line1">
         <br>
