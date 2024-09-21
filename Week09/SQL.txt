@@ -1,0 +1,35 @@
+create database WAb6525163;
+use WAb6525163;
+
+create table guestbook
+    -> (initial char(3) not null,
+    -> name varchar(50) not null,
+    -> id char(8) not null primary key,
+    -> school varchar(100) not null,
+    -> email varchar(100) not null,
+    -> time datetime not null);
+
+insert into guestbook values
+    -> ("Mr.", "Somchai Jaidee", "B1233333", "Computer Engineering", "somchai@hotmail.com", "2024-05-20 12:23:00"),
+    -> ("Ms.", "Sripen Deemak", "B1234444", "Electrical Engineering", "sripen@hotmail.com", "2024-05-20 12:24:00"),
+    -> ("Ms.", "Jaiya Yoodee", "B1234567", "Civil Engineering", "jaiya@gmail.com", "2024-05-20 12:25:00"),
+    -> ("Mr.", "Sombat Sricharoen", "B1235555", "Electrical Engineering", "sombat@thaimail.com", "2024-05-31 16:28:00");
+
+select * from guestbook;
+select * from guestbook where school = "Computer Engineering";
+
+create table student_info
+    -> (id int auto_increment not null primary key,
+    -> initial char(3) not null,
+    -> first_name varchar(50) not null,
+    -> last_name varchar(50) not null,
+    -> date_of_birth date not null,
+    -> address tinytext not null);
+
+insert into student_info values
+    -> (null, "Mr.", "Somchai", "Jaidee", "2003-06-02", "123 Suksabai Village, Phahonyothin Road, Chatuchak Subdistrict, Chatuchak District, Bangkok, 10900"),
+    -> (null, "Ms.", "Sripen", "Deemak", "2003-01-10", "45/3 Soi Sukhumvit 55, Sukhumvit Road, Khlong Tan Nuea Subdistrict, Watthana District, Bangkok, 10110"),
+    -> (null, "Ms.", "Jaiya", "Yoodee", "2001-12-23", "789 Chiang Mai-Lampang Road, Fa Ham Subdistrict, Mueang Chiang Mai District, Chiang Mai, 50000"),
+    -> (null, "Mr.", "Sombat", "Sricharoen", "2004-01-01", "12 Moo 5, Phetkasem Road, Cha-am Subdistrict, Cha-am District, Phetchaburi, 76120");
+
+select * from student_info;
